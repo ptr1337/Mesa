@@ -91,17 +91,11 @@ else
 fi
 
   cd mesa-$versiontag
-
-
-  # remove build dir if there is one
-  if dir build_64; then
-    rm -rf -v build_64
-  fi
-
-  # create build dir
+  
+  rm -rf -v build_64
+  
   mkdir -p -v build_64
 
-  # build with meson
   meson setup build_64/ \
   -D b_ndebug=true \
   -D buildtype=plain \
