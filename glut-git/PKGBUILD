@@ -60,11 +60,6 @@ fi
   make -j$(nproc)
 }
 
-# check(){
-#   cd "$srcdir"/glu
-#   make -k check
-}
-
 package_glu-git(){
   make DESTDIR="$pkgdir/" -C "$srcdir"/glu/ install
 }
