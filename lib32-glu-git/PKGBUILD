@@ -73,6 +73,6 @@ export PKG_CONFIG=/usr/bin/i686-pc-linux-gnu
 }
 
 package_lib32-glu-git(){
-  make DESTDIR="$pkgdir/" -C "$srcdir"/glu-32/ install
+  make DESTDIR="$pkgdir/" -C "$srcdir"/glu/ install
   rm -rf "$pkgdir"/usr/include/
 }
