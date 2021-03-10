@@ -19,10 +19,9 @@ fi
 
 #######################################
 
-#Set compiler
-#Set '1' to use gcc
-#Set '2' to use clang
-#If not set it will build with gcc
+#Set '1' to build with GCC
+#Set '2' to build with CLANG
+#Default is empty. It will build with GCC. To build with different compiler just use : env _compiler=(1 or 2) makepkg -s
 if [ -z ${_compiler+x} ]; then
   _compiler=
 fi
